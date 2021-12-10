@@ -1,13 +1,47 @@
-/* Your Code Here */
 
-/*
- We're giving you this function. Take a look at it, you might see some usage
- that's new and different. That's because we're avoiding a well-known, but
- sneaky bug that we'll cover in the next few lessons!
+function createEmployeeRecord(array) {
+    class Employee{
+        constructor(array) {
+            this.firstName = array[0]
+            this.familyName = array[1]
+            this.title = array[2]
+            this.payPerHour = array[3]
+            this.timeInEvents = []
+            this.timeOutEvents = []
+        }
+    }
 
- As a result, the lessons for this function will pass *and* it will be available
- for you to use if you need it!
- */
+    return new Employee(array)
+}
+
+function createEmployeeRecords(multyArray) {
+    return multyArray.map(elm => createEmployeeRecord(elm))
+}
+ 
+function createTimeInEvent(employee, date) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const allWagesFor = function () {
     const eligibleDates = this.timeInEvents.map(function (e) {
